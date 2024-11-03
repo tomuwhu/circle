@@ -34,6 +34,7 @@ for (let i = 1; i <= 50; i++) {
 </script>
 
 <main>
+  <h1>Kör</h1>
   <table>
     {#each t as row}
       <tr>
@@ -56,10 +57,10 @@ for (let i = 1; i <= 50; i++) {
     background-color: black;
   }
   :global(td.p1) {
-    background-color: white;
+    background-color: light-dark(rgb(178, 178, 178), white);
   }
   :global(td.p2) {
-    background-color: rgb(255, 200, 200);
+    background-color: light-dark(red, rgb(255, 200, 200));
   }
   :global(td.p3) {
     background-color: rgb(200, 255, 249);
